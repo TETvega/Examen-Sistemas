@@ -20,7 +20,7 @@ const Colors = (
 
   return (
     <View style= {[ styles.container, {backgroundColor: color }]} >
-      <ChangeColor_Btn  label='Cambiar Color' onPress = {GenerateColor }/>
+      <ChangeColor_Btn   label='Cambiar Color' onPress = {GenerateColor }/>
     </View>
   )
 }
@@ -29,7 +29,12 @@ export default Colors
 
 
 const styles = StyleSheet.create({
+
+    label:{
+        color: 'white'
+    },
     container: {
+    
       flex: 1, 
       justifyContent: 'center', 
       alignItems: 'center', 
